@@ -1,3 +1,5 @@
+export const apiUrl = "";
+
 export const samplePrompts = [
   { id: 1, message: "Can we add a note for initiating hackathon" },
   { id: 2, message: "Can we add a note for completing implementation" },

@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import "./App.css";
 import Iframe from "./Iframe";
 import Loader from "./Loader";
-import { samplePrompts } from "./const";
+import { samplePrompts, apiUrl } from "./const";
 
 function App() {
   const [prompts, setPrompts] = useState(samplePrompts || []);
@@ -15,7 +15,7 @@ function App() {
   const fetchData = async (first) => {
     if (!first) setIframeLoading(true);
     try {
-      const response = await fetch("");
+      const response = await fetch(apiUrl);
       if (response.ok) {
         const data = await response.json();
         setSource(data);
