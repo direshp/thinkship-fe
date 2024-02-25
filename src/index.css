@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  padding: 0;
+  /* font-family: ; */
+}
+
+.main {
+  display: flex;
+  height: 100vh;
+}
+
+.left {
+  width: 25%;
+  background-color: #f3f4f6;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 8px;
+  box-sizing: border-box;
+}
+.right {
+  width: 75%;
+  height: 100%;
+  position: relative;
+}
+
+.prompt-composer {
+  height: 6%;
+}
+.prompt-composer-input {
+  width: 100%;
+  height: 40px;
+  padding: 8px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+}
+
+.chat-container {
+  height: 92%;
+  overflow: hidden;
+}
+
+.chat-container-inner {
+  overflow: auto;
+  height: 100%;
+}
+
+.prompt-message {
+  padding: 4px;
+  background-color: #475569;
+  color: #fff;
+  border-radius: 4px;
+  text-align: left;
+  margin-bottom: 8px;
+  font-size: 16px;
+  width: 90%;
+}
